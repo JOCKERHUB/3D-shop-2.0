@@ -11,27 +11,49 @@
 </head>
 
 <body>
-    <nav>
-        <div class="logo">
-            <h4>3D SHOP</h4>
+    <div class="container">
+
+
+        <!-- inizio navbar -->
+        <nav>
+            <div class="logo">
+                <h4>3D SHOP</h4>
+            </div>
+            <ul class="nav-link">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Economia</a></li>
+                <li><a href="#">Marketing</a></li>
+                <li><a href="#">Sviluppo</a></li>
+                <li><a href="#">Logistica</a></li>
+                <li><a href="#">R.Umane</a></li>
+            </ul>
+
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+        <!-- fine navbar -->
+
+
+        <div class="main-content pagina">
+            <div>
+                <h1 class="big-text">3D Shop</h1>
+                <span class="paragraph">Tutta la comodità della stampa 3D,<br> senza spendere troppo</span>
+                <a href="#pagina2">
+                    <button class="pagina1-button">
+                        <span>Scopri di più</span>
+                    </button>
+                </a>
+            </div>
+
         </div>
 
-        <ul class="nav-link">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Economia</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Sviluppo</a></li>
-            <li><a href="#">Logistica</a></li>
-            <li><a href="#">R.Umane</a></li>
-        </ul>
-
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
+        <div id="pagina2" style="background-color:red" class="pagina"></div>
+    </div>
     <script src="js/app.js"></script>
+
 </body>
 
 </html>

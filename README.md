@@ -19,4 +19,4 @@
 
 >**Operation**: Caccamese - DeCaroli - Santoro - Morra - Pace
 
->**Risorse umane**:Fiorellino - Gandiglio - Padoan - Sabir - Longo
+>**Risorse umane**: Fiorellino - Gandiglio - Padoan - Sabir - Longo
