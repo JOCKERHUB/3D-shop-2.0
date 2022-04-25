@@ -115,6 +115,7 @@ nav {
     text-align: center;
     position: relative;
     transition: all .35s;
+    cursor: pointer;
 }
 
 .pagina1-button:hover {
@@ -153,15 +154,11 @@ nav {
 
 /* responsive  */
 
+width: 60%;
 
-/*             */
-
-@media screen and (max-width:1024px) {
-    .nav-link {
-        width: 60%;
-    }
 }
 
+}
 @media screen and (max-width:768px) {
     body {
         overflow-x: hidden;
@@ -186,11 +183,9 @@ nav {
         display: block;
     }
 }
-
 .nav-active {
     transform: translateX(0%);
 }
-
 @keyframes navLinkFade {
     from {
         opacity: 0;
@@ -201,15 +196,33 @@ nav {
         transform: translateX(0px);
     }
 }
-
 .toggle .line1 {
     transform: rotate(-45deg) tramslate(-5px, 6px);
 }
-
 .toggle .line2 {
     opacity: 0;
 }
-
 .toggle .line3 {
     transform: rotate(45deg) tramslate(-5px, -6px);
+}
+.stampa-3d {
+    display: flex;
+    font-size: 200px;
+    justify-content: center;
+    font-family: 'Staatliches',
+    cursive;
+    color: white;
+}
+.cose {
+    display: flex;
+    font-size: 100px;
+    justify-content: center;
+    font-family: 'Staatliches',
+    cursive;
+    color: white;
+}
+.div-stampa-3d {
+    background-color: #121420;
+    height: 100px;
+    width: 100px;
 }
