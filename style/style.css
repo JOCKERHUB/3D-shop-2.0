@@ -154,11 +154,6 @@ nav {
 
 /* responsive  */
 
-width: 60%;
-
-}
-
-}
 @media screen and (max-width:768px) {
     body {
         overflow-x: hidden;
@@ -183,9 +178,11 @@ width: 60%;
         display: block;
     }
 }
+
 .nav-active {
     transform: translateX(0%);
 }
+
 @keyframes navLinkFade {
     from {
         opacity: 0;
@@ -196,33 +193,46 @@ width: 60%;
         transform: translateX(0px);
     }
 }
+
 .toggle .line1 {
     transform: rotate(-45deg) tramslate(-5px, 6px);
 }
+
 .toggle .line2 {
     opacity: 0;
 }
+
 .toggle .line3 {
     transform: rotate(45deg) tramslate(-5px, -6px);
 }
+
 .stampa-3d {
     display: flex;
     font-size: 200px;
     justify-content: center;
-    font-family: 'Staatliches',
-    cursive;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
+
 .cose {
     display: flex;
     font-size: 100px;
     justify-content: center;
-    font-family: 'Staatliches',
-    cursive;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
+
 .div-stampa-3d {
-    background-color: #121420;
-    height: 100px;
-    width: 100px;
+    /* background-color: green; */
+    position: fixed;
+    /* width: 100%; */
+    top: 90vh;
+    left: 90%;
+    font-size: 5vh;
+    transition-duration: 0.5s;
+}
+
+.div-stampa-3d:hover {
+    cursor: pointer;
+    transform: translateY(-10%);
 }
