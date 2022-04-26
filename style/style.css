@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fenix&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+@font-face {
+    font-family: "megilian";
+    src: url(/font/MegilanRegular-mLgZx.ttf);
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -228,36 +235,68 @@ nav {
     transform: translateY(-10%);
 }
 
+.pagina2 {
+    background-image: url("/media/broll.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .stampa-3d {
     display: flex;
     font-size: 200px;
     justify-content: center;
     /* font-family: Arial, Helvetica, sans-serif; */
-    font-family: 'PT Sans', sans-serif;
-    color: white;
+    /* font-family: 'PT Sans', sans-serif; */
+    /* font-family: 'megilian'; */
+    font-family: 'Inconsolata', monospace;
+    color: rgb(172, 33, 33);
+}
+
+.container-pagina2 {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10vh 0 20vh 5vh;
+    margin-left: 25vh;
+    margin-right: 25vh;
+    border-radius: 2vh;
 }
 
 .cose {
     display: flex;
     justify-content: flex-end;
     font-size: 5vh;
-    font-family: 'PT Sans', sans-serif;
+    /* font-family: 'PT Sans', sans-serif; */
+    font-family: 'Inconsolata', monospace;
     color: black;
     padding: 2vh;
 }
 
-.container-pagina2 {
-    background-color: white;
-    padding: 5vh 0 20vh 5vh;
-    margin-left: 10vh;
-    margin-right: 10vh;
-    border-radius: 2vh;
+.soluzione {
+    font-size: 5vh;
+    font-family: 'Inconsolata', monospace;
+    color: #00A300;
+    padding: 2vh;
 }
 
-.container-pagina2 img {
-    float: left;
-    width: auto;
-    height: 50vh;
-    border-radius: 2vh;
-    /* margin-left: 10vh; */
+.pagina2-button {
+    padding: 1.5vh;
+    border-radius: 1vh;
+    font-size: 1.5vh;
+    color: #00A300;
+    font-family: 'Inconsolata', monospace;
+    background-color: white;
+    transition-duration: 0.5s;
+    border: none;
+    margin: 0 auto;
+    display: block;
+}
+
+.bottone2 {
+    margin-top: 5vh;
+}
+
+.pagina2-button:hover {
+    background-color: #00A300;
+    color: white;
+    cursor: pointer;
 }
