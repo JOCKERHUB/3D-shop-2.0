@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 * {
     margin: 0px;
     padding: 0px;
@@ -206,22 +209,6 @@ nav {
     transform: rotate(45deg) tramslate(-5px, -6px);
 }
 
-.stampa-3d {
-    display: flex;
-    font-size: 200px;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-}
-
-.cose {
-    display: flex;
-    font-size: 100px;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-}
-
 .div-stampa-3d {
     /* background-color: green; */
     position: fixed;
@@ -235,4 +222,38 @@ nav {
 .div-stampa-3d:hover {
     cursor: pointer;
     transform: translateY(-10%);
+}
+
+.stampa-3d {
+    display: flex;
+    font-size: 200px;
+    justify-content: center;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+}
+
+.cose {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 5vh;
+    font-family: 'PT Sans', sans-serif;
+    color: black;
+    padding: 2vh;
+}
+
+.container-pagina2 {
+    background-color: white;
+    padding: 5vh 0 20vh 5vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    border-radius: 2vh;
+}
+
+.container-pagina2 img {
+    float: left;
+    width: auto;
+    height: 50vh;
+    border-radius: 2vh;
+    /* margin-left: 10vh; */
 }
