@@ -219,6 +219,10 @@ nav {
     transition-duration: 0.5s;
 }
 
+.div-stampa-3d h1 {
+    color: rgb(227, 223, 223);
+}
+
 .div-stampa-3d:hover {
     cursor: pointer;
     transform: translateY(-10%);
