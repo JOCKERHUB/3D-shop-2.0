@@ -382,3 +382,54 @@ nav {
     column-gap: 10px;
     grid-template-columns: auto auto auto;
 }
+
+
+/* pagina3 */
+
+.container-pag3 {
+    display: flex;
+    box-sizing: border-box;
+    font-size: 20px;
+    justify-content: space-around;
+    align-content: space-around;
+    padding-top: 255px;
+    text-align: center;
+}
+
+.div1-p {
+    height: 200px;
+    width: 230px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.div2-p {
+    height: 200px;
+    width: 230px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.div3-p {
+    height: 200px;
+    width: 230px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.lamp {
+    height: 130px;
+    width: 130px;
+    background-color: white;
+    !important
+}
+
+.container-pag3 p {
+    color: black;
+}
