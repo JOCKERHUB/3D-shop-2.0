@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fenix&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap');
 @font-face {
     font-family: "megilian";
     src: url(/font/MegilanRegular-mLgZx.ttf);
@@ -34,13 +35,13 @@ body {
 
 .container {
     width: 100%;
-    height: 500%!important;
+    height: 1000%!important;
     /*in base a quante pagine ci sono -> 2 = 200%*/
     background-color: #121420;
 }
 
 .pagina {
-    height: 20% !important;
+    height: 100vh !important;
     width: 100% !important;
 }
 
@@ -300,11 +301,84 @@ nav {
     color: white;
     cursor: pointer;
 }
-.h1-pagina3{
+
+.h1-pagina3 {
     color: white;
     font-size: 140px;
     text-align: center;
 }
-.p-pagina3{
+
+.p-pagina3 {
     font-size: 60px;
+}
+
+
+/* marketing */
+
+.marketing {}
+
+
+/* .marketing h1 {
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+} */
+
+.header-marketing {
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: auto auto auto;
+    background-color: rgb(236, 186, 194);
+    padding: 10vh 20vh 2vh 20vh;
+    font-size: 2vh;
+    font-family: 'Inconsolata', monospace;
+}
+
+.header-marketing-left {
+    padding-left: 10vh;
+    font-family: 'Inconsolata', monospace;
+}
+
+.header-marketing-left h1 {
+    font-size: 5vh;
+    color: black
+}
+
+.header-marketing-left p {
+    font-size: 3vh;
+    color: black;
+    font-family: 'Radio Canada', sans-serif;
+}
+
+.header-marketing-right p {
+    font-size: 2vh;
+    color: black;
+    font-family: 'Radio Canada', sans-serif;
+}
+
+.button-marketing button {
+    padding: 1.5vh;
+    border-radius: 1vh;
+    /* center the button */
+    margin: 0 auto;
+    display: block;
+    font-size: 1.5vh;
+    color: rgb(236, 186, 194);
+    font-family: 'Inconsolata', monospace;
+    background-color: white;
+    transition-duration: 0.5s;
+    border: none;
+    margin-top: 2vh;
+}
+
+.button-marketing button:hover {
+    background-color: rgb(236, 186, 194);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.footer-marketing {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: auto auto auto;
 }
