@@ -392,8 +392,9 @@ nav {
     font-size: 20px;
     justify-content: space-around;
     align-content: space-around;
-    padding-top: 255px;
     text-align: center;
+    position: relative;
+    top: 160px;
 }
 
 .div1-p {
@@ -406,7 +407,7 @@ nav {
 }
 
 .div2-p {
-    height: 200px;
+    height: 140px;
     width: 230px;
     background-color: white;
     display: flex;
@@ -415,7 +416,7 @@ nav {
 }
 
 .div3-p {
-    height: 200px;
+    height: 120px;
     width: 230px;
     background-color: white;
     display: flex;
@@ -424,12 +425,21 @@ nav {
 }
 
 .lamp {
-    height: 130px;
-    width: 130px;
-    background-color: white;
-    !important
+    position: relative;
+    left: 250px;
+    top: 105px;
+}
+.flash{
+    position: relative;
+    left: 758px;
+    top: 118px;
+}
+.package{
+    position: relative;
+    left: 1250px;
+    top: 120px;
 }
 
-.container-pag3 p {
+.container-pag3 p { 
     color: black;
 }
