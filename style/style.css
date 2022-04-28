@@ -389,14 +389,13 @@ nav {
 .container-pag3 {
     display: flex;
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 3vh !important;
     justify-content: space-around;
     align-content: space-around;
     text-align: center;
     position: relative;
     top: 160px;
     font-size: 35px;
-    
 }
 
 .div1-p {
@@ -406,7 +405,6 @@ nav {
     display: flex;
     align-items: center;
     border-radius: 10px;
-    
 }
 
 .div2-p {
@@ -416,12 +414,11 @@ nav {
     display: flex;
     align-items: center;
     border-radius: 10px;
-
 }
 
 .div3-p {
-    height: 140px;
-    width: 230px;
+    height: 15vh;
+    width: 25vh;
     background-color: white;
     display: flex;
     align-items: center;
@@ -433,17 +430,19 @@ nav {
     left: 260px;
     top: 105px;
 }
-.flash{
+
+.flash {
     position: relative;
     left: 790px;
     top: 118px;
 }
-.package{
+
+.package {
     position: relative;
     left: 1260px;
     top: 120px;
 }
 
-.container-pag3 p { 
+.container-pag3 p {
     color: black;
 }
