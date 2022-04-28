@@ -474,6 +474,7 @@ nav {
 }
 
 .sviluppo-button a button {
+    width: 25vh;
     margin-top: 5vh;
     font-size: 2vh;
     transition-duration: 0.5s;
