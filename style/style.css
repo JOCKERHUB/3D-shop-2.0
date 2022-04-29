@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap');
 @font-face {
     font-family: "megilian";
-    src: url(/font/MegilanRegular-mLgZx.ttf);
+    src: url(./font/MegilanRegular-mLgZx.ttf);
 }
 
 * {
@@ -237,7 +237,7 @@ nav {
 }
 
 .pagina2 {
-    background-image: url("/media/broll.gif");
+    background-image: url("./media/broll.gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
