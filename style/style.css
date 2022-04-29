@@ -389,7 +389,7 @@ nav {
 .container-pag3 {
     display: flex;
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 3vh !important;
     justify-content: space-around;
     align-content: space-around;
     text-align: center;
@@ -417,8 +417,8 @@ nav {
 }
 
 .div3-p {
-    height: 140px;
-    width: 230px;
+    height: 15vh;
+    width: 25vh;
     background-color: white;
     display: flex;
     align-items: center;

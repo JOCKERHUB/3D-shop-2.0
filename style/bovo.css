@@ -241,7 +241,6 @@ nav {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 .stampa-3d {
@@ -451,78 +450,6 @@ nav {
 }
 
 
-/* sviluppo */
-
-.sviluppo {
-    padding-top: 50vh;
-    background-image: url('/media/stampante.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.sviluppo-buttons-container {
-    display: flex;
-    /* center the buttons */
-    margin: 0 auto;
-    justify-content: center;
-    width: 100%;
-    height: 10vh;
-    border-radius: 5vh;
-    transition-duration: 0.5s;
-}
-
-.sviluppo-button a button {
-    width: 25vh;
-    margin-top: 5vh;
-    font-size: 2vh;
-    transition-duration: 0.5s;
-    border: none;
-    font-family: 'Inconsolata', monospace;
-}
-
-.sleft {
-    background-color: #2C2B3C;
-    opacity: 0.5;
-    margin-right: 2vh;
-}
-
-.sleft:hover {
-    opacity: 0.9;
-    cursor: pointer;
-}
-
-.sright {
-    background-color: #00A300;
-    opacity: 0.5;
-    margin-left: 2vh;
-}
-
-.sright:hover {
-    opacity: 0.9;
-    cursor: pointer;
-}
-
-.sviluppo-button-button {
-    padding: 2vh 5vh 2vh 5vh;
-    border-radius: 1vh;
-    /* center the button */
-}
-
-.sviluppo h1 {
-    text-align: center;
-    font-family: 'Inconsolata', monospace;
-    font-size: 8vh;
-}
-
-.sviluppo h2 {
-    text-align: center;
-    font-family: 'Inconsolata', monospace;
-    font-size: 5vh;
-}
-
-
 /* pagina3 */
 
 .container-pag3 {
@@ -534,54 +461,64 @@ nav {
     text-align: center;
     position: relative;
     top: 160px;
-    font-size: 35px;
+    font-size: 3.5vh;
 }
 
 .div1-p {
-    height: 300px;
-    width: 300px;
+    height: 45vh;
+    width: 33vh;
     background-color: white;
-    display: flex;
     align-items: center;
     border-radius: 10px;
 }
 
 .div2-p {
-    height: 210px;
-    width: 270px;
+    height: 45vh;
+    width: 33vh;
     background-color: white;
-    display: flex;
     align-items: center;
     border-radius: 10px;
 }
 
 .div3-p {
-    height: 140px;
-    width: 230px;
+    height: 45vh;
+    width: 33vh;
     background-color: white;
-    display: flex;
     align-items: center;
     border-radius: 10px;
 }
 
 .lamp {
     position: relative;
-    left: 260px;
-    top: 105px;
+    top: 2vh;
+    padding-bottom: 3vh;
 }
 
 .flash {
     position: relative;
-    left: 790px;
-    top: 118px;
+    top: 3vh;
+    padding-bottom: 5vh;
 }
 
 .package {
     position: relative;
-    left: 1260px;
-    top: 120px;
+    top: 4vh;
+    padding-bottom: 5vh;
 }
 
 .container-pag3 p {
     color: black;
+}
+
+.pagine3-button {
+    padding: 1.5vh;
+    border-radius: 1vh;
+    font-size: 1.5vh;
+    color: red;
+    font-family: 'Inconsolata', monospace;
+    background-color: white;
+    transition-duration: 0.5s;
+    border: none;
+    margin: 0 auto;
+    display: block;
 }
