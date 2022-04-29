@@ -120,7 +120,6 @@ nav {
   background-color: #121420;
   color: red;
   border: 1px solid white;
-  /* letter-spacing: 2px; */
   text-align: center;
   position: relative;
   transition: all 0.35s;
@@ -489,9 +488,9 @@ font-family: 'Inconsolata', monospace;
   font-family: "Inconsolata", monospace;
   background-color: white;
   transition-duration: 0.5s;
-  border: none;
-  margin: 0 auto;
   display: block;
+  position: relative;
+  left: calc(50% - 230px / 2);
 }
 
 .bottone2 {
@@ -737,4 +736,16 @@ p {
 .footer-sito h1 {
   font-family: "Inconsolata", monospace;
   font-size: 7vh;
+}
+
+.risorse-container > ul > li {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Inconsolata", monospace;
+
+}
+
+.risorse-container > ul {
+  margin-left: 45px;
 }
