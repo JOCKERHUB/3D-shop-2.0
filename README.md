@@ -1,22 +1,23 @@
-#  **3D Shop**
->## Sito web ecommerce dove acquistare stampe 3D su richiesta o da catalogo
+# **3D Shop**
 
-- [ ] **Fare un Template da far seguire a tutti**
-- [ ] **Fare la home**
-- [ ] Pagina del Gruppo finance
-- [ ] Pagina del Gruppo Commerciale
-- [ ] Pagina del Gruppo Pianificazione e sviluppo
-- [ ] Pagina del Gruppo Operation
-- [ ] Pagina del Gruppo risorse umane
+> ## Sito web ecommerce dove acquistare stampe 3D su richiesta o da catalogo
 
+- [X] **Fare un Template da far seguire a tutti**
+- [X] **Fare la home**
+- [X] Pagina del Gruppo finance
+- [X] Pagina del Gruppo Commerciale
+- [X] Pagina del Gruppo Pianificazione e sviluppo
+- [X] Pagina del Gruppo Operation
+- [X] Pagina del Gruppo risorse umane (spiace)
 
 ### Gruppi:
->**Finance**: Andreetta - Folletto - Neculaes - Pugliese - Rondolino
 
->**Commerciale**: Basso - Borgomastro - Cavezzale - Denis - Filippone
+> **Finance**: Andreetta - Folletto - Neculaes - Pugliese - Rondolino
 
->**Pianificazione e Sviluppo**: Bovo - Chiaretta - Cirdei - Coduti - Mandache - Mastrippolito
+> **Commerciale**: Basso - Borgomastro - Cavezzale - Denis - Filippone
 
->**Operation**: Caccamese - DeCaroli - Santoro - Morra - Pace
+> **Pianificazione e Sviluppo**: Bovo - Chiaretta - Cirdei - Coduti - Mandache - Mastrippolito
 
->**Risorse umane**: Fiorellino - Gandiglio - Padoan - Sabir - Longo
+> **Operation**: Caccamese - DeCaroli - Santoro - Morra - Pace
+
+> **Risorse umane**: Fiorellino - Gandiglio - Padoan - Sabir - Longo
