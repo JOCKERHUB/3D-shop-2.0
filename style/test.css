@@ -1,587 +1,692 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fenix&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap');
-@font-face {
-    font-family: "megilian";
-    src: url(/font/MegilanRegular-mLgZx.ttf);
-}
-
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
-    color: white;
-    text-decoration: none;
-}
-
-
-/* 
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Fenix&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap');
+    @font-face {
+        font-family: "megilian";
+        src: url(/font/MegilanRegular-mLgZx.ttf);
+    }
+    
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: 'poppins', sans-serif;
+        color: white;
+        text-decoration: none;
+    }
+    /* 
 color palette 
 https://coolors.co/palette/403f4c-2c2b3c-1b2432-121420 
 */
-
-html,
-body {
-    height: 100% !important;
-    width: 100% !important;
-    margin: 0px;
-    padding: 0px;
-    scroll-behavior: smooth;
-}
-
-.container {
-    width: 100%;
-    height: 1000%!important;
-    /*in base a quante pagine ci sono -> 2 = 200%*/
-    background-color: #121420;
-}
-
-.pagina {
-    height: 100vh !important;
-    width: 100% !important;
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
-    background-color: #2C2B3C;
-    font-family: 'poppins', sans-serif;
-}
-
-.logo {
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 20px;
-}
-
-.nav-link {
-    display: flex;
-    justify-content: space-around;
-    width: 50%;
-}
-
-.nav-link li {
-    list-style: none;
-}
-
-.nav-link a {
-    color: white;
-    text-decoration: none;
-    letter-spacing: 1px;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.burger {
-    display: none;
-    cursor: pointer;
-}
-
-.burger div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px;
-    transition: all 0.3s ease;
-}
-
-
-/* fine navbar */
-
-.main-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: red; */
-}
-
-.main-content div {
-    text-align: center;
-    /* width: 20%; */
-}
-
-
-/* bottone */
-
-.pagina1-button {
-    display: block;
-    margin-top: 25%;
-    margin-left: 25%;
-    width: 200px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 18px;
-    font-family: sans-serif;
-    background-color: #121420;
-    color: red;
-    border: 1px solid white;
-    /* letter-spacing: 2px; */
-    text-align: center;
-    position: relative;
-    transition: all .35s;
-    cursor: pointer;
-}
-
-.pagina1-button:hover {
-    color: #fff;
-}
-
-.pagina1-button:after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #ff003b;
-    transition: all .50s;
-}
-
-.pagina1-button span {
-    position: relative;
-    z-index: 2;
-}
-
-.pagina1-button:hover:after {
-    width: 100%;
-}
-
-.big-text {
-    font-size: 100px;
-    margin-bottom: 10%;
-}
-
-.paragraph {
-    font-size: 20px;
-}
-
-
-/* responsive  */
-
-@media screen and (max-width:768px) {
+    
+    html,
     body {
-        overflow-x: hidden;
+        height: 100% !important;
+        width: 100% !important;
+        margin: 0px;
+        padding: 0px;
+        scroll-behavior: smooth;
     }
-    .nav-link {
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        top: 8vh;
-        background-color: #494966;
+    
+    .container {
+        width: 100%;
+        height: 1000%!important;
+        /*in base a quante pagine ci sono -> 2 = 200%*/
+        background-color: #121420;
+    }
+    
+    .pagina {
+        height: 100vh !important;
+        width: 100% !important;
+    }
+    
+    nav {
         display: flex;
-        flex-direction: column;
+        justify-content: space-around;
         align-items: center;
-        width: 200px;
-        transform: translateX(100%);
-        transition: transform 0.5 ease-in;
+        min-height: 8vh;
+        background-color: #2C2B3C;
+        font-family: 'poppins', sans-serif;
     }
+    
+    .logo {
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 20px;
+    }
+    
+    .nav-link {
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+    }
+    
     .nav-link li {
+        list-style: none;
+    }
+    
+    .nav-link a {
+        color: white;
+        text-decoration: none;
+        letter-spacing: 1px;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    
+    .burger {
+        display: none;
+        cursor: pointer;
+    }
+    
+    .burger div {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+    /* fine navbar */
+    
+    .main-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: red; */
+    }
+    
+    .main-content div {
+        text-align: center;
+        /* width: 20%; */
+    }
+    /* bottone */
+    
+    .pagina1-button {
+        display: block;
+        margin-top: 25%;
+        margin-left: 25%;
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 18px;
+        font-family: sans-serif;
+        background-color: #121420;
+        color: red;
+        border: 1px solid white;
+        /* letter-spacing: 2px; */
+        text-align: center;
+        position: relative;
+        transition: all .35s;
+        cursor: pointer;
+    }
+    
+    .pagina1-button:hover {
+        color: #fff;
+    }
+    
+    .pagina1-button:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #ff003b;
+        transition: all .50s;
+    }
+    
+    .pagina1-button span {
+        position: relative;
+        z-index: 2;
+    }
+    
+    .pagina1-button:hover:after {
+        width: 100%;
+    }
+    
+    .big-text {
+        font-size: 100px;
+        margin-bottom: 10%;
+    }
+    
+    .paragraph {
+        font-size: 20px;
+    }
+    /* responsive  */
+    
+    @media screen and (max-width:768px) {
+        body {
+            overflow-x: hidden;
+        }
+        .nav-link {
+            position: absolute;
+            right: 0px;
+            height: 92vh;
+            top: 8vh;
+            background-color: #494966;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 200px;
+            transform: translateX(100%);
+            transition: transform 0.5 ease-in;
+        }
+        .nav-link li {
+            opacity: 0;
+        }
+        .burger {
+            display: block;
+        }
+    }
+    
+    .nav-active {
+        transform: translateX(0%);
+    }
+    
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+    
+    .toggle .line1 {
+        transform: rotate(-45deg) tramslate(-5px, 6px);
+    }
+    
+    .toggle .line2 {
         opacity: 0;
     }
-    .burger {
+    
+    .toggle .line3 {
+        transform: rotate(45deg) tramslate(-5px, -6px);
+    }
+    
+    .div-stampa-3d {
+        /* background-color: green; */
+        position: fixed;
+        /* width: 100%; */
+        top: 90vh;
+        left: 90%;
+        font-size: 5vh;
+        transition-duration: 0.5s;
+    }
+    
+    .div-stampa-3d h1 {
+        color: rgb(227, 223, 223);
+    }
+    
+    .div-stampa-3d:hover {
+        cursor: pointer;
+        transform: translateY(-10%);
+    }
+    
+    .pagina2 {
+        background-image: url("/media/broll.gif");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    
+    .stampa-3d {
+        display: flex;
+        font-size: 200px;
+        justify-content: center;
+        /* font-family: Arial, Helvetica, sans-serif; */
+        /* font-family: 'PT Sans', sans-serif; */
+        /* font-family: 'megilian'; */
+        font-family: 'Inconsolata', monospace;
+        color: rgb(172, 33, 33);
+    }
+    
+    .container-pagina2 {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 10vh 0 20vh 5vh;
+        margin-left: 25vh;
+        margin-right: 25vh;
+        border-radius: 2vh;
+    }
+    
+    .cose {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 5vh;
+        /* font-family: 'PT Sans', sans-serif; */
+        font-family: 'Inconsolata', monospace;
+        color: black;
+        padding: 2vh;
+    }
+    
+    .soluzione {
+        font-size: 5vh;
+        font-family: 'Inconsolata', monospace;
+        color: #00A300;
+        padding: 2vh;
+    }
+    
+    .pagina2-button {
+        padding: 1.5vh;
+        border-radius: 1vh;
+        font-size: 1.5vh;
+        color: #00A300;
+        font-family: 'Inconsolata', monospace;
+        background-color: white;
+        transition-duration: 0.5s;
+        border: none;
+        margin: 0 auto;
         display: block;
     }
-}
-
-.nav-active {
-    transform: translateX(0%);
-}
-
-@keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
+    
+    .bottone2 {
+        margin-top: 5vh;
     }
-    to {
-        opacity: 1;
-        transform: translateX(0px);
+    
+    .pagina2-button:hover {
+        background-color: #00A300;
+        color: white;
+        cursor: pointer;
     }
-}
-
-.toggle .line1 {
-    transform: rotate(-45deg) tramslate(-5px, 6px);
-}
-
-.toggle .line2 {
-    opacity: 0;
-}
-
-.toggle .line3 {
-    transform: rotate(45deg) tramslate(-5px, -6px);
-}
-
-.div-stampa-3d {
-    /* background-color: green; */
-    position: fixed;
-    /* width: 100%; */
-    top: 90vh;
-    left: 90%;
-    font-size: 5vh;
-    transition-duration: 0.5s;
-}
-
-.div-stampa-3d h1 {
-    color: rgb(227, 223, 223);
-}
-
-.div-stampa-3d:hover {
-    cursor: pointer;
-    transform: translateY(-10%);
-}
-
-.pagina2 {
-    background-image: url("/media/broll.gif");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.stampa-3d {
-    display: flex;
-    font-size: 200px;
-    justify-content: center;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    /* font-family: 'PT Sans', sans-serif; */
-    /* font-family: 'megilian'; */
-    font-family: 'Inconsolata', monospace;
-    color: rgb(172, 33, 33);
-}
-
-.container-pagina2 {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 10vh 0 20vh 5vh;
-    margin-left: 25vh;
-    margin-right: 25vh;
-    border-radius: 2vh;
-}
-
-.cose {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 5vh;
-    /* font-family: 'PT Sans', sans-serif; */
-    font-family: 'Inconsolata', monospace;
-    color: black;
-    padding: 2vh;
-}
-
-.soluzione {
-    font-size: 5vh;
-    font-family: 'Inconsolata', monospace;
-    color: #00A300;
-    padding: 2vh;
-}
-
-.pagina2-button {
-    padding: 1.5vh;
-    border-radius: 1vh;
-    font-size: 1.5vh;
-    color: #00A300;
-    font-family: 'Inconsolata', monospace;
-    background-color: white;
-    transition-duration: 0.5s;
-    border: none;
-    margin: 0 auto;
-    display: block;
-}
-
-.bottone2 {
-    margin-top: 5vh;
-}
-
-.pagina2-button:hover {
-    background-color: #00A300;
-    color: white;
-    cursor: pointer;
-}
-
-.h1-pagina3 {
-    color: white;
-    font-size: 140px;
-    text-align: center;
-}
-
-.p-pagina3 {
-    font-size: 60px;
-}
-
-
-/* marketing */
-
-.marketing {
-    background-color: white;
-}
-
-
-/* .marketing h1 {
+    
+    .h1-pagina3 {
+        color: white;
+        font-size: 140px;
+        text-align: center;
+    }
+    
+    .p-pagina3 {
+        font-size: 60px;
+    }
+    /* marketing */
+    
+    .marketing {
+        background-color: white;
+    }
+    /* .marketing h1 {
     text-align: center;
     font-family: 'Inconsolata', monospace;
 } */
-
-.header-marketing {
-    display: grid;
-    column-gap: 50px;
-    grid-template-columns: auto auto auto;
-    background-color: rgb(236, 186, 194);
-    padding: 10vh 20vh 2vh 20vh;
-    font-size: 2vh;
-    font-family: 'Inconsolata', monospace;
-}
-
-.header-marketing-left {
-    padding-left: 10vh;
-    font-family: 'Inconsolata', monospace;
-}
-
-.header-marketing-left h1 {
-    font-size: 8vh;
-    color: black
-}
-
-.header-marketing-left p {
-    font-size: 3vh;
-    color: black;
-    font-family: 'Radio Canada', sans-serif;
-}
-
-.header-marketing-right p {
-    font-size: 2vh;
-    color: black;
-    font-family: 'Radio Canada', sans-serif;
-}
-
-.button-marketing button {
-    padding: 1.5vh;
-    border-radius: 1vh;
-    /* center the button */
-    margin: 0 auto;
-    display: block;
-    font-size: 2vh;
-    color: rgb(236, 186, 194);
-    font-family: 'Inconsolata', monospace;
-    background-color: white;
-    transition-duration: 0.5s;
-    border: none;
-    margin-top: 2vh;
-}
-
-.marketing-button2 {
-    padding: 1.5vh;
-    border-radius: 10vh!important;
-    width: 10vh;
-    /* center the button */
-    margin: 0 auto;
-    display: block;
-    font-size: 2vh;
-    color: rgb(236, 186, 194);
-    font-family: 'Inconsolata', monospace;
-    background-color: white;
-    transition-duration: 0.5s;
-    border: none;
-    margin-top: 2vh;
-    box-shadow: 0.2vh 0.2vh 1vh pink;
-}
-
-.marketing-button2 img {
-    width: 2vh;
-    margin: 0 auto;
-    display: block;
-    height: auto;
-}
-
-.marketing-button2:hover {
-    background-color: rgb(236, 186, 194);
-    color: white;
-    cursor: pointer;
-}
-
-.marketing-button:hover {
-    background-color: rgb(236, 186, 194);
-    color: white;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.footer-marketing {
-    display: flex;
-}
-
-.marketing-container {
-    width: 100%;
-    height: 40vh;
-    background-color: rgb(236, 186, 194);
-    margin: 8vh 2vh 2vh 5vh;
-    border-radius: 5vh;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    transition-duration: 0.5s;
-}
-
-.marketing-container:hover {
-    box-shadow: 1vh 1vh 2vh grey;
-}
-
-.marketing-container img {
-    width: 10vh;
-    height: auto;
-    margin-top: 2vh!important;
-    margin: 0 auto;
-    display: block;
-}
-
-.marketing-container h1 {
-    text-align: center;
-    font-size: 5vh;
-    color: black;
-    font-family: 'Inconsolata', monospace;
-}
-
-.marketing-container p {
-    font-family: 'Radio Canada', sans-serif;
-    font-size: 2vh;
-    color: black;
-    margin: 2vh;
-}
-
-
-/* sviluppo */
-
-.sviluppo {
-    padding-top: 50vh;
-    background-image: url('/media/stampante.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.sviluppo-buttons-container {
-    display: flex;
-    /* center the buttons */
-    margin: 0 auto;
-    justify-content: center;
-    width: 100%;
-    height: 10vh;
-    border-radius: 5vh;
-    transition-duration: 0.5s;
-}
-
-.sviluppo-button a button {
-    width: 25vh;
-    margin-top: 5vh;
-    font-size: 2vh;
-    transition-duration: 0.5s;
-    border: none;
-    font-family: 'Inconsolata', monospace;
-}
-
-.sleft {
-    background-color: #2C2B3C;
-    opacity: 0.5;
-    margin-right: 2vh;
-}
-
-.sleft:hover {
-    opacity: 0.9;
-    cursor: pointer;
-}
-
-.sright {
-    background-color: #00A300;
-    opacity: 0.5;
-    margin-left: 2vh;
-}
-
-.sright:hover {
-    opacity: 0.9;
-    cursor: pointer;
-}
-
-.sviluppo-button-button {
-    padding: 2vh 5vh 2vh 5vh;
-    border-radius: 1vh;
-    /* center the button */
-}
-
-.sviluppo h1 {
-    text-align: center;
-    font-family: 'Inconsolata', monospace;
-    font-size: 8vh;
-}
-
-.sviluppo h2 {
-    text-align: center;
-    font-family: 'Inconsolata', monospace;
-    font-size: 5vh;
-}
-
-
-/* pagina3 */
-
-.container-pag3 {
-    display: flex;
-    box-sizing: border-box;
-    font-size: 20px;
-    justify-content: space-around;
-    align-content: space-around;
-    text-align: center;
-    position: relative;
-    top: 160px;
-    font-size: 35px;
-}
-
-.div1-p {
-    height: 300px;
-    width: 300px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-}
-
-.div2-p {
-    height: 210px;
-    width: 270px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-}
-
-.div3-p {
-    height: 140px;
-    width: 230px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-}
-
-.lamp {
-    position: relative;
-    left: 260px;
-    top: 105px;
-}
-
-.flash {
-    position: relative;
-    left: 790px;
-    top: 118px;
-}
-
-.package {
-    position: relative;
-    left: 1260px;
-    top: 120px;
-}
-
-.container-pag3 p {
-    color: black;
-}
+    
+    .header-marketing {
+        display: grid;
+        column-gap: 50px;
+        grid-template-columns: auto auto auto;
+        background-color: rgb(236, 186, 194);
+        padding: 10vh 20vh 2vh 20vh;
+        font-size: 2vh;
+        font-family: 'Inconsolata', monospace;
+    }
+    
+    .header-marketing-left {
+        padding-left: 10vh;
+        font-family: 'Inconsolata', monospace;
+    }
+    
+    .header-marketing-left h1 {
+        font-size: 8vh;
+        color: black
+    }
+    
+    .header-marketing-left p {
+        font-size: 3vh;
+        color: black;
+        font-family: 'Radio Canada', sans-serif;
+    }
+    
+    .header-marketing-right p {
+        font-size: 2vh;
+        color: black;
+        font-family: 'Radio Canada', sans-serif;
+    }
+    
+    .button-marketing button {
+        padding: 1.5vh;
+        border-radius: 1vh;
+        /* center the button */
+        margin: 0 auto;
+        display: block;
+        font-size: 2vh;
+        color: rgb(236, 186, 194);
+        font-family: 'Inconsolata', monospace;
+        background-color: white;
+        transition-duration: 0.5s;
+        border: none;
+        margin-top: 2vh;
+    }
+    
+    .marketing-button2 {
+        padding: 1.5vh;
+        border-radius: 10vh!important;
+        width: 10vh;
+        /* center the button */
+        margin: 0 auto;
+        display: block;
+        font-size: 2vh;
+        color: rgb(236, 186, 194);
+        font-family: 'Inconsolata', monospace;
+        background-color: white;
+        transition-duration: 0.5s;
+        border: none;
+        margin-top: 2vh;
+        box-shadow: 0.2vh 0.2vh 1vh pink;
+    }
+    
+    .marketing-button2 img {
+        width: 2vh;
+        margin: 0 auto;
+        display: block;
+        height: auto;
+    }
+    
+    .marketing-button2:hover {
+        background-color: rgb(236, 186, 194);
+        color: white;
+        cursor: pointer;
+    }
+    
+    .marketing-button:hover {
+        background-color: rgb(236, 186, 194);
+        color: white;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    .footer-marketing {
+        display: flex;
+    }
+    
+    .marketing-container {
+        width: 100%;
+        height: 40vh;
+        background-color: rgb(236, 186, 194);
+        margin: 8vh 2vh 2vh 5vh;
+        border-radius: 5vh;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        transition-duration: 0.5s;
+    }
+    
+    .marketing-container:hover {
+        box-shadow: 1vh 1vh 2vh grey;
+    }
+    
+    .marketing-container img {
+        width: 10vh;
+        height: auto;
+        margin-top: 2vh!important;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .marketing-container h1 {
+        text-align: center;
+        font-size: 5vh;
+        color: black;
+        font-family: 'Inconsolata', monospace;
+    }
+    
+    .marketing-container p {
+        font-family: 'Radio Canada', sans-serif;
+        font-size: 2vh;
+        color: black;
+        margin: 2vh;
+    }
+    /* sviluppo */
+    
+    .sviluppo {
+        padding-top: 50vh;
+        background-image: url('/media/stampante.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    
+    .sviluppo-buttons-container {
+        display: flex;
+        /* center the buttons */
+        margin: 0 auto;
+        justify-content: center;
+        width: 100%;
+        height: 10vh;
+        border-radius: 5vh;
+        transition-duration: 0.5s;
+    }
+    
+    .sviluppo-button a button {
+        width: 25vh;
+        margin-top: 5vh;
+        font-size: 2vh;
+        transition-duration: 0.5s;
+        border: none;
+        font-family: 'Inconsolata', monospace;
+    }
+    
+    .sleft {
+        background-color: #2C2B3C;
+        opacity: 0.5;
+        margin-right: 2vh;
+    }
+    
+    .sleft:hover {
+        opacity: 0.9;
+        cursor: pointer;
+    }
+    
+    .sright {
+        background-color: #00A300;
+        opacity: 0.5;
+        margin-left: 2vh;
+    }
+    
+    .sright:hover {
+        opacity: 0.9;
+        cursor: pointer;
+    }
+    
+    .sviluppo-button-button {
+        padding: 2vh 5vh 2vh 5vh;
+        border-radius: 1vh;
+        /* center the button */
+    }
+    
+    .sviluppo h1 {
+        text-align: center;
+        font-family: 'Inconsolata', monospace;
+        font-size: 8vh;
+    }
+    
+    .sviluppo h2 {
+        text-align: center;
+        font-family: 'Inconsolata', monospace;
+        font-size: 5vh;
+    }
+    /* pagina3 */
+    
+    .container-pag3 {
+        display: flex;
+        box-sizing: border-box;
+        font-size: 20px;
+        justify-content: space-around;
+        align-content: space-around;
+        text-align: center;
+        position: relative;
+        top: 160px;
+        font-size: 35px;
+    }
+    
+    .div1-p {
+        height: 300px;
+        width: 300px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+    }
+    
+    .div2-p {
+        height: 210px;
+        width: 270px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+    }
+    
+    .div3-p {
+        height: 140px;
+        width: 230px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+    }
+    
+    .lamp {
+        position: relative;
+        left: 260px;
+        top: 105px;
+    }
+    
+    .flash {
+        position: relative;
+        left: 790px;
+        top: 118px;
+    }
+    
+    .package {
+        position: relative;
+        left: 1260px;
+        top: 120px;
+    }
+    
+    .container-pag3 p {
+        color: black;
+    }
+    /* logistica */
+    
+    .logistica {
+        background-color: rgb(236, 186, 194);
+    }
+    
+    .logistica-container {
+        display: flex;
+        /* margin: 0 30vh 0 30vh; */
+    }
+    
+    .logistica h1 {
+        color: black;
+        text-align: center;
+        font-family: 'Inconsolata', monospace;
+        font-size: 6vh;
+    }
+    
+    .logistica h2 {
+        color: black;
+        text-align: center;
+        font-family: 'Inconsolata', monospace;
+        font-size: 4vh;
+        margin: 2vh 0 2vh 0;
+        padding-left: 20vh;
+        padding-right: 20vh;
+    }
+    
+    .logistica-card {
+        box-shadow: 0 2vh 4vh 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        padding: 5vh;
+        width: 20%;
+        height: 60vh;
+        margin: 2vh;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 2vh;
+        box-shadow: 1vh 1vh 5vh white;
+    }
+    
+    .logistica-card:hover {
+        box-shadow: 1vh 1vh 5vh rgb(152, 147, 147);
+    }
+    
+    .logistica-card img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .logistica-card-container {
+        text-align: center;
+    }
+    
+    .logistica-card-container p {
+        margin-top: 2vh;
+        font-family: 'Inconsolata', monospace;
+        font-size: 2vh;
+        color: black;
+    }
+    
+    .logistica-GRANDE {
+        font-size: 3vh!important;
+    }
+    
+    .logistica-buttons {
+        display: block;
+        /* center the buttons */
+        margin: 0 auto;
+        justify-content: center;
+        width: 100%;
+        height: 10vh;
+        border-radius: 5vh;
+        transition-duration: 0.5s;
+    }
+    
+    .logistica-buttons-container {
+        display: flex;
+        /* center the buttons */
+        margin: 0 auto;
+        justify-content: center;
+        width: 100%;
+        height: 10vh;
+        border-radius: 5vh;
+        transition-duration: 0.5s;
+    }
+    
+    .logistica-button a button {
+        margin: 2vh;
+        width: 25vh;
+        margin-top: 5vh;
+        font-size: 2.5vh;
+        transition-duration: 0.5s;
+        border: none;
+        font-family: 'Inconsolata', monospace;
+        padding: 2vh;
+        border-radius: 2vh;
+    }
+    
+    .lright {
+        background-color: white;
+        color: rgb(236, 186, 194);
+    }
+    
+    .lright:hover {
+        background-color: rgb(236, 186, 194);
+        color: white;
+        box-shadow: 1vh 1vh 5vh rgb(152, 147, 147);
+        cursor: pointer;
+    }
+    
+    .lleft {
+        background-color: rgb(236, 186, 194);
+    }
+    
+    .lleft:hover {
+        background-color: white;
+        color: rgb(236, 186, 194);
+        box-shadow: 1vh 1vh 5vh rgb(152, 147, 147);
+        cursor: pointer;
+    }
