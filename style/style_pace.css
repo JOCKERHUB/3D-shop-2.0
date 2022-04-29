@@ -60,17 +60,22 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: grey;
+  background-color: rgb(32, 32, 47);
 }
+
 .contenuto-sezione > img {
-  margin-top: -150px;
+  margin-top: -130px;
   width: 120px;
+}
+
+.sezione:nth-of-type(2) > .contenuto-sezione > img {
+  width: 80px;
 }
 
 .contenuto-sezione > h1 {
   padding: 0;
   /* margin-top: -100px; */
-  font-size: 50px;
+  font-size: 30px;
   text-align: center;
 }
 
@@ -80,4 +85,31 @@
   margin-right: 20px;
   margin-top: 30px;
   text-align: justify;
+}
+
+.rbottone {
+  margin-bottom: -60px;
+  margin-top: 40px;
+}
+.rbottone button {
+  padding: 1.5vh;
+  border-radius: 10vh !important;
+  width: 34vh;
+  margin: 0 auto;
+  display: block;
+  font-size: 2vh;
+  color: rgb(39, 39, 39);
+  font-family: "Inconsolata", monospace;
+  background-color: white;
+  transition-duration: 0.5s;
+  border: none;
+  margin-top: 2vh;
+  box-shadow: 0.2vh 0.2vh 1vh rgb(37, 37, 37);
+}
+
+.rbottonea:hover {
+  background-color: rgb(21, 21, 21);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
