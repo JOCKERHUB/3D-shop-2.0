@@ -413,7 +413,7 @@ font-family: 'Inconsolata', monospace;
 
 .sviluppo {
   padding-top: 50vh;
-  background-image: url("./media/stampante.jpg");
+  background-image: url("../media/stampante.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
