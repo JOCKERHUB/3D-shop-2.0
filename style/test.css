@@ -33,7 +33,7 @@ https://coolors.co/palette/403f4c-2c2b3c-1b2432-121420
     
     .container {
         width: 100%;
-        height: 1000%!important;
+        height: 800%!important;
         /*in base a quante pagine ci sono -> 2 = 200%*/
         background-color: #121420;
     }
@@ -310,8 +310,8 @@ https://coolors.co/palette/403f4c-2c2b3c-1b2432-121420
         background-color: white;
     }
     /* .marketing h1 {
-    text-align: center;
-    font-family: 'Inconsolata', monospace;
+text-align: center;
+font-family: 'Inconsolata', monospace;
 } */
     
     .header-marketing {
@@ -689,4 +689,110 @@ https://coolors.co/palette/403f4c-2c2b3c-1b2432-121420
         color: rgb(236, 186, 194);
         box-shadow: 1vh 1vh 5vh rgb(152, 147, 147);
         cursor: pointer;
+    }
+    /* risorse umane */
+    
+    .risorse-umane {
+        background-color: rgb(236, 186, 194);
+    }
+    
+    .risorse-container {
+        width: auto;
+        display: flex;
+        background-color: white;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        margin: 0 30vh 0 30vh;
+        padding: 2vh;
+        border-bottom-left-radius: 2vh;
+        border-bottom-right-radius: 2vh;
+        box-shadow: 1 2vh 6vh 0 rgba(63, 62, 62, 0.2);
+        transition-duration: 0.5s;
+    }
+    
+    .risorse-container:hover {
+        box-shadow: 1vh 1vh 5vh rgb(152, 147, 147);
+    }
+    
+    .risorse-container img {
+        /* image on the left and text on the right */
+        width: 50%;
+        height: auto;
+        border-radius: 2vh;
+    }
+    
+    .risorse-container h1,
+    p {
+        margin-left: 2vh;
+    }
+    
+    .risorse-container h1 {
+        font-family: 'Inconsolata', monospace;
+        font-size: 4vh;
+        color: black;
+        margin-bottom: 2vh;
+    }
+    
+    .risorse-container p {
+        /* text on the right and image on the left*/
+        font-family: 'Inconsolata', monospace;
+        font-size: 2vh;
+        color: black;
+    }
+    
+    .ris-but button {
+        padding: 1.5vh;
+        border-radius: 1vh;
+        /* center the button */
+        margin: 0 auto;
+        display: block;
+        font-size: 2vh;
+        color: rgb(236, 186, 194);
+        font-family: 'Inconsolata', monospace;
+        background-color: white;
+        transition-duration: 0.5s;
+        border: none;
+        margin-top: 2vh;
+        margin-bottom: 10vh;
+    }
+    
+    .ris.button {
+        padding: 1.5vh;
+        border-radius: 10vh!important;
+        width: 10vh;
+        /* center the button */
+        margin: 0 auto;
+        display: block;
+        font-size: 2vh;
+        color: rgb(236, 186, 194);
+        font-family: 'Inconsolata', monospace;
+        background-color: white;
+        transition-duration: 0.5s;
+        border: none;
+        margin-top: 2vh;
+        box-shadow: 0.2vh 0.2vh 1vh pink;
+    }
+    
+    .ris-button:hover {
+        box-shadow: 0.2vh 0.2vh 1vh rgb(152, 147, 147);
+        cursor: pointer;
+    }
+    
+    .footer-sito {
+        background-color: rgb(207, 155, 163);
+        /* fill the remaining of the page */
+        height: 23vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        width: 100%;
+    }
+    
+    .footer-sito h1 {
+        font-family: 'Inconsolata', monospace;
+        font-size: 7vh;
     }
