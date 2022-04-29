@@ -29,7 +29,7 @@ navSlide();
 $(".back-to-top").click(function () {
   $("html, body").animate(
     {
-      scrollTop: $(".main-content").offset().top - 10,
+      scrollTop: $(".container").offset().top,
     },
     1700
   );
@@ -38,7 +38,7 @@ $(".back-to-top").click(function () {
 $(window).scroll(function () {
   if (
     $(window).scrollTop() - $(window).innerHeight() >
-    $(".main-content").height()
+    $(".container").height()
   ) {
     $(".back-to-top").removeClass("nascosto");
   } else {
