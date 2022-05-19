@@ -256,7 +256,7 @@ nav {
 
 .container-pagina2 {
     background-color: rgba(255, 255, 255, 0.9);
-    padding: 10vh 0 20vh 5vh;
+    padding: 13vh 0 20vh 5vh;
     margin-left: 25vh;
     margin-right: 25vh;
     border-radius: 2vh;
@@ -306,6 +306,7 @@ nav {
     color: white;
     font-size: 140px;
     text-align: center;
+    padding: top 2vh;
 }
 
 .p-pagina3 {
